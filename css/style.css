@@ -1,0 +1,442 @@
+﻿/* >>> MEDIA QUERIES <<< */
+
+/* SMARTPHONES >> portrait */
+@media (max-width: 480px) {
+	#GoogleMap{height:400px; width:100%;}
+	footer{position: absolute; bottom: 0;}
+	#content{height: 66%;}
+	#header{height: 16%;}
+}
+
+/* SMARTPHONES >> landscape */
+@media (min-width: 481px) and (max-width: 700px){
+	#GoogleMap{height:150px; width:100%;}
+	#address li{display: inline;}
+	#header{display: none;}
+	footer{display: none;}
+	#content{height: 90%;}
+}
+
+/* TABLETS >> mid res >> portrait */
+@media (min-width: 701px) and (max-width: 1000px){
+	#GoogleMap{height:600px; width:100%;}
+	footer{position: absolute; bottom: 0;}
+	#content{height: 82%;}
+	#header{height: 15%;}
+}
+
+/* TABLETS >> mid res >> landscape */
+@media (min-width: 1001px) and (max-width: 1080px){
+	#GoogleMap{height:600px; width:100%;}
+	#address li{display: inline;}
+	footer{position: absolute; bottom: 0;}
+	#content{height: 75%;}
+	#header{height: 15%;}
+	#offer-page, #about-page {width: 60%;margin:0 auto;}
+}
+
+/* DESKTOPS >> high res */
+@media (min-width: 1081px) {
+	
+	#GoogleMap{height:800px; width:100%}
+	footer{position: absolute; bottom: 0;}
+	#full-width-container{width:1000px; box-shadow: 0 0 2em lightgrey;}
+	#content{height: 75%;}
+	#header{height: 16%;}
+	#offer-page, #about-page {width: 60%;margin:0 auto;}
+}
+
+/* >>> MAIN CSS (mutual for whole website) <<< */
+
+html {
+	height: 100vh;
+}
+
+body{
+	margin: 0;
+	height: 100%;
+	background-color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+}
+
+	h1{
+		font-family: 'Peralta', serif;
+		color: darkgrey;
+		margin: 0;
+		padding-left: .5em;
+	}
+	
+	h3 {	
+		color: darkorange;
+		font-family: 'Quicksand', sans-serif;
+		padding-left: 1em;
+	}
+
+	p{
+		color: grey;
+		margin:1em; padding:0;
+	}
+
+	hr{
+		border-style: solid;
+		border-color: darkgrey;
+		border-width: .1em;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	
+	table {
+		border-style: none;
+	}
+	
+	td {
+		padding: .2em;
+		margin: .3em;
+		text-align: left;
+	}
+		
+	th{	
+		text-align: left;
+		padding: 1em;
+	}
+	
+	a{	color:white; 
+		text-decoration:none;
+	}
+	
+	a:hover {color:orange; 
+			text-decoration:none;
+			background-color:#333333;
+	}
+	
+
+
+
+/* DIVs here (in chronological order) */
+/* MAIN DIVs */
+#full-width-container{
+	position: relative;
+	height: 100%;
+	margin:auto;
+	background-color: lightgrey;
+	overflow: hidden;
+}
+
+#header{
+	width:100%;
+	background-color:#595959;
+}
+	
+	#header img{
+		height: 80%;
+		display: block;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		margin: auto;
+	}
+
+	/*** nav bar ***/
+#nav-bar{
+	width: 100%;
+	
+	padding-top: .2em;
+	padding-bottom: .2em;
+	background-color: orange;
+	margin: auto;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+}
+	
+	#nav-bar ul{
+		display: block;
+		list-style-type: none;
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	
+	#nav-bar li{
+		display: inline;
+		color: white;	
+	}
+	#nav-bar a{
+		color:white; 
+		text-decoration:none;
+		margin: 0 .35em 0 .35em;
+	}
+	
+	#nav-bar a:hover {color:orange; background-color:#333333; text-decoration:none;}
+		
+	/*** nav bar end ***/
+
+#content{
+	
+	padding-top: .5em;
+	width: 100%;
+	overflow: auto;
+	margin: auto;
+		
+}
+
+
+
+footer{
+	width: 100%;
+	
+	background-color:#595959;
+	text-align: center; font-size: 75%;
+	padding-top: 0em; padding-bottom: 0em;
+}
+
+footer p{color: yellow;}
+
+/* *** other DIVs *** */
+
+/* CONTACT page */
+	#GoogleMap{
+		width: 100%;
+		margin:0 auto;
+	}
+	
+		
+	#address ul{
+		list-style-type: none;
+		font-size:90%;
+		margin:1em; padding:0;
+		margin-bottom:1em;
+		list-style-type: none;
+	}
+	
+	#address li {
+		color: grey;
+	}
+
+/* MAIN page */
+	#welcome {text-align: center;}
+
+	
+/* OFFER page */
+	
+	#offer h3{
+		padding-left: 1em;
+		font-weight: bold;
+		font-size: 125%;
+	}
+
+	#offer p{
+		font-weight: bold;
+		padding-left: 2.3em;
+	}
+	
+	#offer h3:hover{
+		cursor: pointer;
+	}
+
+	#printings,#outdoor,#branding,#digital{
+		display: none;
+	}
+
+	/* temp sliders*/
+	#main-slider{width:100%;background-color:none;
+		padding: 0;
+		margin: auto;
+	}
+
+	#photo-gallery{width:100%;background-color:none;
+		padding: 0;
+		margin: auto;
+	}
+
+/* BLOG page */
+
+	.blog{
+		
+	}
+	#blog h3{
+		margin-top: 0;
+	}
+	
+	#blog-photo{
+		height: 10em;
+		width:  15em;
+		/*
+		background-color: darkgrey;
+		border: solid .15em white;
+		
+		margin-left: 1em;
+		margin-right: 1em;
+		*/
+		margin: .15em 1.15em .15em 1.15em;
+		float: left;
+	}
+	
+	#blog-photo img{
+		max-width:100%; 
+		max-height:100%;
+		margin:auto;
+		display:block;
+	}
+
+/* MANAGE BLOG System page */
+	#manageblog{
+		margin: auto;
+		display: block;
+		width: 65%;
+		height: 60%;
+	}
+
+		#manageblog h1{
+			font-family: 'Comfortaa', sans-serif;
+			text-align: center;
+		}
+		
+		#manageblog h4{
+			text-align: center;
+		}
+		
+		#manageblog-main{
+			width: 100%;
+		}	
+				
+				
+		#manageblog-buttons a{
+			margin: auto;
+			text-align: center;
+				
+		}
+		
+		#login-form{
+			
+			width: 40%;
+			height: 30%;
+			
+			/* centering */
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		
+		#login-button{
+			margin: 1em;
+			position: absolute;
+			right: 40%;
+		}
+
+		.form-field{
+			float: right;
+		}
+		
+		#logged {
+			text-align: right;
+		}
+		
+		.wrong{
+			color: red;
+		}
+		
+		#done{
+			display: block;
+			margin: 0 auto;
+			padding: 1em;
+			width: 30%;
+			border: dotted 2px white;
+		}
+		
+		#done h1{
+			padding: 0;
+		}
+	
+	/* ADD post */
+		#manageblog-content textarea{
+			
+			width: 50%;
+			height: 5em;
+		}
+	
+	
+	/* EDIT, DELETE posts list */
+	
+	#posts-list {
+			background-color: #0099ff;
+		}
+						
+		#posts-list td, th{
+			width: 50%;
+		}
+		
+		#posts-list th{
+			font-weight: normal;
+			color: white;
+			background-color: #0099ff;
+		}
+		
+		#posts-list tr {
+			background-color: lightgrey;
+		}
+		
+		#posts-list tr:hover{
+			color: red;
+			background-color: white;
+		}
+	
+	
+	/* EDIT post  buttons */
+	#edit-button{
+		width: 5em;
+		height: 2em;
+		color: #0099ff;
+		font-weight: bold;
+	}
+	
+	#cancel-button{
+		display: block;
+		text-align: center;
+	}
+	
+	
+	/* DELETE post buttons */	
+	#delete-button{
+		width: 2.5em;
+		height: 2em;
+		color: red;
+		font-weight: bold;
+	}
+	
+	#confirm-delete-button{
+		width: 5em;
+		height: 2em;
+		color: red;
+		font-weight: bold;
+		
+		float: right;
+		display: block;
+		text-align: center;
+	}
+	#cancel-delete-button{
+		width: 5em;
+		height: 2em;
+		
+		float: left;
+	}
+	
+	#confirm-delete{
+		width: 10em;
+		
+		display: block;
+		margin: 0 auto;
+	}
+	
+		
+
+/* ADMIN div */
+	#admin-link{
+		position: absolute;
+		right: 1em;
+		top: 1em;
+	}
+	
+	#admin-link a{color: lightgrey;}

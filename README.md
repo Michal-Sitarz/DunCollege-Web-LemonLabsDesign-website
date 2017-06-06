@@ -14,4 +14,5 @@ PHP, MySQL, HTML5, CSS3, Javascript, jQuery, responsive design
 Notepad++, Google Chrome + dev-tools
 
 <b>Design files:</b>
-  <br><a href='???.pdf'>???</a>
+<br>Available soon!
+<!--<br><a href='???.pdf'>???</a>-->

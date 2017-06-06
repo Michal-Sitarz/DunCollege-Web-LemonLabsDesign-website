@@ -14,6 +14,6 @@ PHP, MySQL, HTML5, CSS3, Javascript, jQuery, responsive design
 Notepad++, Google Chrome + dev-tools
 
 <b>Design files:</b>
-  <br><a href='LLD project - Use Case diagram ver2.0.pdf'>Use Case Diagram</a>
-  <br><a href='LLD project - Navigation Diagram ver2.0.pdf'>Navigation Diagram</a>
-  <br><a href='LLD project - Wireframes ver2.0.pdf'>Wireframes</a>
+  <br><a href='docs/LLD project - Use Case diagram ver2.0.pdf'>Use Case Diagram</a>
+  <br><a href='docs/LLD project - Navigation Diagram ver2.0.pdf'>Navigation Diagram</a>
+  <br><a href='docs/LLD project - Wireframes ver2.0.pdf'>Wireframes</a>
